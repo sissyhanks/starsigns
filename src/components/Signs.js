@@ -1,3 +1,4 @@
+import "./Signs.css";
 import React from "react";
 
 const signs = [

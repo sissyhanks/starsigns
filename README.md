@@ -2,6 +2,8 @@
 
 Star Signs is a simple app cerated as a space to practice the implementation React features and reinforce the learning of the principals behind them.
 
+Version one of the project presents users with a list of star signs. When a sign is clicked the an astrological reading for that day will appear on the screen.
+
 ## Application Design
 
 ### Components
