@@ -18,7 +18,7 @@ const signs = [
 class Signs extends React.Component {
   render() {
     const starSigns = signs.map(({ id, name }) => {
-      return <li id={id}>{name}</li>;
+      return <li key={id}>{name}</li>;
     });
     return <ul>{starSigns}</ul>;
   }
