@@ -16,13 +16,28 @@ const signs = [
   { id: 12, name: "Pisces" },
 ];
 
-class Signs extends React.Component {
+class WelcomeSigns extends React.Component {
+  state = { sign: "" };
+  onClack = (event) => {
+    this.props.handleDisplay(event.target.value);
+  };
+
   render() {
     const starSigns = signs.map(({ id, name }) => {
-      return <li key={id}>{name}</li>;
+      return (
+        <button
+          style={{ textAlign: "center" }}
+          xs={2}
+          key={name}
+          value={name}
+          onClick={this.onClack}
+        >
+          {name}
+        </button>
+      );
     });
-    return <ul>{starSigns}</ul>;
+    return <div>{starSigns}</div>;
   }
 }
 
-export default Signs;
+export default WelcomeSigns;

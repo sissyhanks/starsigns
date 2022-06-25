@@ -14,7 +14,7 @@ Version one of the project presents users with a list of star signs. When a sign
 
 #### App
 
-the app component renders a [React Fragment](https://reactjs.org/docs/fragments.html) where in the [Material UI](#styling) [CSS Baseline](https://mui.com/material-ui/react-css-baseline/) is set.
+the app component conditionally renders a [React Fragment](https://reactjs.org/docs/fragments.html) based on the [state](https://www.geeksforgeeks.org/how-to-change-the-state-of-react-component-on-click/#:~:text=We%20have%20to%20set%20initial,inside%20the%20function%20using%20setState.) of the App component
 
 App then returns the [Signs](#signs) component.
 

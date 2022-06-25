@@ -1,18 +1,29 @@
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Container from "@mui/material/Container";
-import Signs from "./Signs";
+// import aztro from "../api/aztro";
+
+import WelcomeSigns from "./WelcomeSigns";
+import ShowSigns from "./ShowSign";
 
 class App extends React.Component {
+  state = { display: "list" };
+
+  handleSign = (sign) => {
+    this.setState({ display: sign });
+  };
+
   render() {
-    return (
-      <React.Fragment>
-        <CssBaseline />
-        <Container maxWidth="sm">
-          <Signs />
-        </Container>
-      </React.Fragment>
-    );
+    const { display } = this.state;
+
+    if (this.state.display === "list") {
+      return (
+        <div>
+          <WelcomeSigns handleDisplay={this.handleSign} />
+          {display}
+        </div>
+      );
+    } else {
+      return <ShowSigns />;
+    }
   }
 }
 
