@@ -22,7 +22,7 @@ class App extends React.Component {
         </div>
       );
     } else {
-      return <ShowSigns />;
+      return <ShowSigns showSign={display} />;
     }
   }
 }

@@ -1,12 +1,13 @@
 import React from "react";
 
 class ShowSigns extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { sign: this.props.showSign };
+  }
   render() {
-    return (
-      <div>
-        <h1>Now Showing Sign</h1>
-      </div>
-    );
+    const { sign } = this.state;
+    return <div>{sign}</div>;
   }
 }
 
