@@ -8,7 +8,7 @@ class App extends React.Component {
   state = { display: "list" };
 
   handleSign = (sign) => {
-    this.setState({ display: sign });
+    this.setState({ display: sign, json: {} });
   };
 
   render() {

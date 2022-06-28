@@ -2,7 +2,7 @@ import "./Signs.css";
 import React from "react";
 
 const signs = [
-  { id: 1, name: "Aries" },
+  { id: 1, name: "aries" },
   { id: 2, name: "Taurus" },
   { id: 3, name: "Gemini" },
   { id: 4, name: "Cancer" },
