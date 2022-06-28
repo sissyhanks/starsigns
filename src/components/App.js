@@ -18,11 +18,10 @@ class App extends React.Component {
       return (
         <div>
           <WelcomeSigns handleDisplay={this.handleSign} />
-          {display}
         </div>
       );
     } else {
-      return <ShowSigns showSign={display} />;
+      return <ShowSigns showSign={display} handleDisplay={this.handleSign} />;
     }
   }
 }

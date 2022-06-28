@@ -1,4 +1,3 @@
-import "./Signs.css";
 import React from "react";
 
 const signs = [
@@ -16,7 +15,7 @@ const signs = [
   { id: 12, name: "Pisces" },
 ];
 
-class WelcomeSigns extends React.Component {
+class SignNav extends React.Component {
   onClack = (event) => {
     this.props.handleDisplay(event.target.value);
   };
@@ -26,8 +25,7 @@ class WelcomeSigns extends React.Component {
       return (
         <button
           style={{ textAlign: "center" }}
-          xs={2}
-          key={name}
+          key={id}
           value={name}
           onClick={this.onClack}
         >
@@ -39,4 +37,4 @@ class WelcomeSigns extends React.Component {
   }
 }
 
-export default WelcomeSigns;
+export default SignNav;

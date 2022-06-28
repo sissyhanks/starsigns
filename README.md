@@ -31,7 +31,7 @@ starSigns is a function that takes in the Signs array of objects, deconstructs t
 
 #### ShowSigns
 
-ShowSigns is passed the state of the App component as a prop and, when the conditions off rendering this component are met, displays the name of the prop passed to it.
+ShowSigns is passed the state of the App component as a [prop](https://medium.com/@jasminegump/passing-data-between-a-parent-and-child-in-react-deea2ec8e654) and, when the conditions off rendering this component are met, displays the name of the prop passed to it.
 
 ## Styling
 
