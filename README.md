@@ -14,6 +14,8 @@ Version one of the project presents users with a list of star signs. When a sign
 
 [ShowSigns](#ShowSigns)
 
+[SignNav](#SignNav)
+
 #### App
 
 the app component conditionally renders a [React Fragment](https://reactjs.org/docs/fragments.html) based on the [state](https://www.geeksforgeeks.org/how-to-change-the-state-of-react-component-on-click/#:~:text=We%20have%20to%20set%20initial,inside%20the%20function%20using%20setState.) of the App component
@@ -32,6 +34,11 @@ starSigns is a function that takes in the Signs array of objects, deconstructs t
 #### ShowSigns
 
 ShowSigns is passed the state of the App component as a [prop](https://medium.com/@jasminegump/passing-data-between-a-parent-and-child-in-react-deea2ec8e654) and, when the conditions off rendering this component are met, displays the name of the prop passed to it.
+
+#### SignNav
+
+SignNav is a react component with a list of sign options that is shown on the ShowSigns display. the list of signs are clickable buttons that update the state of the ShowSigns component when clicked.
+the ShowSigns component passes the call back function `nuSign` to the SignNav component as a prop that is triggered within SignNav's click event handler to update the state of the ShowSign component with the value of any button clicked within the SignNav component
 
 ## Styling
 
