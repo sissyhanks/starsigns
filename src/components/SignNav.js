@@ -17,6 +17,7 @@ const signs = [
 
 class SignNav extends React.Component {
   onClack = (event) => {
+    event.preventDefault();
     this.props.handleDisplay(event.target.value);
   };
 

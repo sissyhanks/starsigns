@@ -7,8 +7,20 @@ class ShowSigns extends React.Component {
     this.state = { sign: this.props.showSign, json: {} };
   }
 
-  nuSign = (nuSign) => {
-    this.setState({ sign: nuSign });
+  nuSign = async (nuSign) => {
+    await this.setState({ sign: nuSign });
+    {
+      const { sign } = this.state;
+      const URL =
+        "https://aztro.sameerkumar.website/?sign=" + sign + "&day=today";
+      fetch(URL, {
+        method: "POST",
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          this.setState({ json });
+        });
+    }
   };
 
   componentDidMount() {
