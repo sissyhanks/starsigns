@@ -43,3 +43,6 @@ the ShowSigns component passes the call back function `nuSign` to the SignNav co
 ## Styling
 
 Star Signs is styled with the [Material UI](https://mui.com/) component library.
+
+Do you love handling events?
+if so use [currentTarget](https://stackoverflow.com/questions/58193507/handling-icon-onclick-events-with-material-ui-and-reactjs) in place of target to pull info from events

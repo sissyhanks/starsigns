@@ -1,6 +1,6 @@
 import "./Signs.css";
 import React from "react";
-import { Button } from "@material-ui/core";
+import { Button, Grid, ListItem } from "@mui/material";
 
 const signs = [
   { id: 1, name: "aries" },
@@ -25,18 +25,19 @@ class WelcomeSigns extends React.Component {
   render() {
     const starSigns = signs.map(({ id, name }) => {
       return (
-        <Button
-          style={{ textAlign: "center" }}
-          xs={2}
-          key={name}
-          value={name}
-          onClick={this.onClack}
-        >
-          {name}
-        </Button>
+        //xs=2... each item takes up 2 columns
+        <Grid item xs={4} md={2}>
+          <Button key={name} value={name} onClick={this.onClack}>
+            {name}
+          </Button>
+        </Grid>
       );
     });
-    return <div>{starSigns}</div>;
+    return (
+      <Grid container spacing={2}>
+        {starSigns}
+      </Grid>
+    );
   }
 }
 

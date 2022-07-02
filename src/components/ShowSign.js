@@ -1,5 +1,6 @@
 import React from "react";
 import SignNav from "./SignNav";
+import { Typography } from "@mui/material";
 
 class ShowSigns extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class ShowSigns extends React.Component {
       return (
         <div>
           <SignNav handleDisplay={this.nuSign} />
-          {this.state.json.description}
+          <Typography>{this.state.json.description}</Typography>
         </div>
       );
     }
