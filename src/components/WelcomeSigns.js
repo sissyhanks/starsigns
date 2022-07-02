@@ -1,5 +1,6 @@
 import "./Signs.css";
 import React from "react";
+import { Button } from "@material-ui/core";
 
 const signs = [
   { id: 1, name: "aries" },
@@ -18,13 +19,13 @@ const signs = [
 
 class WelcomeSigns extends React.Component {
   onClack = (event) => {
-    this.props.handleDisplay(event.target.value);
+    this.props.handleDisplay(event.currentTarget.value);
   };
 
   render() {
     const starSigns = signs.map(({ id, name }) => {
       return (
-        <button
+        <Button
           style={{ textAlign: "center" }}
           xs={2}
           key={name}
@@ -32,7 +33,7 @@ class WelcomeSigns extends React.Component {
           onClick={this.onClack}
         >
           {name}
-        </button>
+        </Button>
       );
     });
     return <div>{starSigns}</div>;

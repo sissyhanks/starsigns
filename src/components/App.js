@@ -21,7 +21,11 @@ class App extends React.Component {
         </div>
       );
     } else {
-      return <ShowSigns showSign={display} handleDisplay={this.handleSign} />;
+      return (
+        <div>
+          <ShowSigns showSign={display} handleDisplay={this.handleSign} />
+        </div>
+      );
     }
   }
 }
