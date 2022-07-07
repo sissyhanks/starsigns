@@ -1,6 +1,6 @@
 import "./Signs.css";
 import React from "react";
-import { Button, Grid, ListItem } from "@mui/material";
+import { Button, Grid, Box } from "@mui/material";
 
 const signs = [
   { id: 1, name: "aries" },
@@ -25,11 +25,12 @@ class WelcomeSigns extends React.Component {
   render() {
     const starSigns = signs.map(({ id, name }) => {
       return (
-        //xs=2... each item takes up 2 columns
-        <Grid item xs={4} md={2}>
-          <Button key={name} value={name} onClick={this.onClack}>
-            {name}
-          </Button>
+        <Grid key={id} item xs={4} md={2}>
+          <Box display="flex" justifyContent="center">
+            <Button key={id} value={name} onClick={this.onClack}>
+              {name}
+            </Button>
+          </Box>
         </Grid>
       );
     });

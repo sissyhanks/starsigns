@@ -3,22 +3,26 @@ import React from "react";
 
 import WelcomeSigns from "./WelcomeSigns";
 import ShowSigns from "./ShowSign";
+import SignSigns from "./SignSigns";
+
+import { Grid } from "@mui/material";
 
 class App extends React.Component {
-  state = { display: "list" };
+  state = { display: null };
 
   handleSign = (sign) => {
-    this.setState({ display: sign, json: {} });
+    this.setState({ display: sign });
   };
 
   render() {
     const { display } = this.state;
 
-    if (this.state.display === "list") {
+    if (!this.state.display) {
       return (
-        <div>
+        <Grid container justify="center">
+          <SignSigns />
           <WelcomeSigns handleDisplay={this.handleSign} />
-        </div>
+        </Grid>
       );
     } else {
       return (
