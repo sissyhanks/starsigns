@@ -6,7 +6,6 @@ const SignSigns = function () {
     <Grid item xs={12}>
       <Box display="flex" justifyContent="center">
         <div
-          item
           style={{
             boxSizing: "border-box",
             backgroundColor: "00FFFFFF",
@@ -36,7 +35,6 @@ const SignSigns = function () {
           alt=""
         ></img>
         <div
-          item
           style={{
             boxSizing: "border-box",
             backgroundColor: "00FFFFFF",
@@ -70,7 +68,6 @@ const SignSigns = function () {
           alt=""
         ></img>
         <div
-          item
           style={{
             boxSizing: "border-box",
             backgroundColor: "00FFFFFF",

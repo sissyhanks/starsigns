@@ -17,9 +17,9 @@ class App extends React.Component {
   render() {
     const { display } = this.state;
 
-    if (!this.state.display) {
+    if (!display) {
       return (
-        <Grid container justifyContent="flex-end">
+        <Grid container justifyContent="center">
           <SignSigns />
           <WelcomeSigns handleDisplay={this.handleSign} />
         </Grid>
