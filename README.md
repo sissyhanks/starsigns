@@ -48,3 +48,9 @@ Star Signs is styled with the [Material UI](https://mui.com/) component library.
 
 Do you love handling events?
 if so use [currentTarget](https://stackoverflow.com/questions/58193507/handling-icon-onclick-events-with-material-ui-and-reactjs) in place of target to pull info from events
+
+All icons by [Icons8](https://icons8.com/)
+
+## Deployment
+
+Deployed to [GitHub Pages](https://github.com/gitname/react-gh-pages)
