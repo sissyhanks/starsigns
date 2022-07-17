@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/starsigns/static/css/main.31d6cfe0.css",
+    "main.js": "/starsigns/static/js/main.d959680f.js",
+    "index.html": "/starsigns/index.html",
+    "main.d959680f.js.map": "/starsigns/static/js/main.d959680f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.d959680f.js"
+  ]
+}
